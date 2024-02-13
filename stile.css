@@ -1,0 +1,28 @@
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.box:hover{
+    transform: translateX(300%) ; 
+    transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
+
+   
+}
+
+
+
+
+
+
+
+
+section{
+    width: 600px;
+    height: 600px;
+    margin-left: 500px;
+    margin-top: 300px;
+    outline: solid red;
+    
+}
