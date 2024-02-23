@@ -1,28 +1,57 @@
 .box{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: blue;
+   position: relative;
+    animation: gig 5s  0s infinite alternate
+    both;
+
+    animation-duration: 6000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
 }
 
-.box:hover{
-    transform: translateX(300%) ; 
-    transition: 2s cubic-bezier(0.4, 0, 0.2, 1);
 
-   
+
+
+
+
+@keyframes gig{
+
+    0% {
+      transform: translateY(0) translateX(0); 
+       background-color: blue; 
+    }
+    25% {
+      transform: translateY(200px) translateX(0); 
+       background-color: red; 
+    }
+    50% {
+      transform: translateY(200px) translateX(200px); 
+     
+       background-color: yellow; 
+    }
+    75% {
+      transform: translateY(0) translateX(200px); 
+      
+       background-color: green; 
+    }
+    100% {
+      transform: translateY(0) translateX(0); 
+         background-color: blue; 
+    }
+
+
 }
-
-
-
-
-
-
 
 
 section{
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     margin-left: 500px;
     margin-top: 300px;
     outline: solid red;
+    position: absolute;
     
 }
